@@ -28,7 +28,6 @@ Partial Class frmConfScheduler
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -36,6 +35,12 @@ Partial Class frmConfScheduler
         Me.SfButton1 = New Syncfusion.WinForms.Controls.SfButton()
         Me.SfButton2 = New Syncfusion.WinForms.Controls.SfButton()
         Me.SfButton3 = New Syncfusion.WinForms.Controls.SfButton()
+        Me.SfButton4 = New Syncfusion.WinForms.Controls.SfButton()
+        Me.SfButton5 = New Syncfusion.WinForms.Controls.SfButton()
+        Me.SfButton6 = New Syncfusion.WinForms.Controls.SfButton()
+        Me.SfButton7 = New Syncfusion.WinForms.Controls.SfButton()
+        Me.SfButton8 = New Syncfusion.WinForms.Controls.SfButton()
+        Me.SfButton9 = New Syncfusion.WinForms.Controls.SfButton()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -100,25 +105,15 @@ Partial Class frmConfScheduler
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(15, 139)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(119, 13)
+        Me.Label5.Size = New System.Drawing.Size(143, 13)
         Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Pompa di calore ad aria"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(15, 165)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(130, 13)
-        Me.Label6.TabIndex = 2
-        Me.Label6.Text = "Pompa di calore ad acqua"
+        Me.Label5.Text = "Pompe di calore (aria/acqua)"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(15, 191)
+        Me.Label7.Location = New System.Drawing.Point(15, 165)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(114, 13)
         Me.Label7.TabIndex = 2
@@ -128,7 +123,7 @@ Partial Class frmConfScheduler
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(15, 217)
+        Me.Label8.Location = New System.Drawing.Point(15, 191)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(88, 13)
         Me.Label8.TabIndex = 2
@@ -138,7 +133,7 @@ Partial Class frmConfScheduler
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(160, 191)
+        Me.Label20.Location = New System.Drawing.Point(160, 165)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(83, 13)
         Me.Label20.TabIndex = 4
@@ -148,7 +143,7 @@ Partial Class frmConfScheduler
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(160, 217)
+        Me.Label1.Location = New System.Drawing.Point(160, 191)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(83, 13)
         Me.Label1.TabIndex = 4
@@ -162,6 +157,7 @@ Partial Class frmConfScheduler
         Me.SfButton1.Name = "SfButton1"
         Me.SfButton1.Size = New System.Drawing.Size(55, 20)
         Me.SfButton1.TabIndex = 5
+        Me.SfButton1.Tag = "CFFS_Fascia1"
         Me.SfButton1.Text = "Fascia 1"
         '
         'SfButton2
@@ -172,6 +168,7 @@ Partial Class frmConfScheduler
         Me.SfButton2.Name = "SfButton2"
         Me.SfButton2.Size = New System.Drawing.Size(55, 20)
         Me.SfButton2.TabIndex = 5
+        Me.SfButton2.Tag = "CFFS_Fascia2"
         Me.SfButton2.Text = "Fascia 2"
         '
         'SfButton3
@@ -182,21 +179,87 @@ Partial Class frmConfScheduler
         Me.SfButton3.Name = "SfButton3"
         Me.SfButton3.Size = New System.Drawing.Size(55, 20)
         Me.SfButton3.TabIndex = 5
-        Me.SfButton3.Text = "Fascia 3"
+        Me.SfButton3.Tag = "CFFS_Fascia3"
+        Me.SfButton3.Text = "Fascia3"
+        '
+        'SfButton4
+        '
+        Me.SfButton4.AccessibleName = "Button"
+        Me.SfButton4.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SfButton4.Location = New System.Drawing.Point(163, 106)
+        Me.SfButton4.Name = "SfButton4"
+        Me.SfButton4.Size = New System.Drawing.Size(55, 20)
+        Me.SfButton4.TabIndex = 5
+        Me.SfButton4.Text = "Fascia 1"
+        '
+        'SfButton5
+        '
+        Me.SfButton5.AccessibleName = "Button"
+        Me.SfButton5.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SfButton5.Location = New System.Drawing.Point(224, 106)
+        Me.SfButton5.Name = "SfButton5"
+        Me.SfButton5.Size = New System.Drawing.Size(55, 20)
+        Me.SfButton5.TabIndex = 5
+        Me.SfButton5.Text = "Fascia 2"
+        '
+        'SfButton6
+        '
+        Me.SfButton6.AccessibleName = "Button"
+        Me.SfButton6.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SfButton6.Location = New System.Drawing.Point(285, 106)
+        Me.SfButton6.Name = "SfButton6"
+        Me.SfButton6.Size = New System.Drawing.Size(55, 20)
+        Me.SfButton6.TabIndex = 5
+        Me.SfButton6.Text = "Fascia 3"
+        '
+        'SfButton7
+        '
+        Me.SfButton7.AccessibleName = "Button"
+        Me.SfButton7.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SfButton7.Location = New System.Drawing.Point(163, 132)
+        Me.SfButton7.Name = "SfButton7"
+        Me.SfButton7.Size = New System.Drawing.Size(55, 20)
+        Me.SfButton7.TabIndex = 5
+        Me.SfButton7.Text = "Fascia 1"
+        '
+        'SfButton8
+        '
+        Me.SfButton8.AccessibleName = "Button"
+        Me.SfButton8.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SfButton8.Location = New System.Drawing.Point(224, 132)
+        Me.SfButton8.Name = "SfButton8"
+        Me.SfButton8.Size = New System.Drawing.Size(55, 20)
+        Me.SfButton8.TabIndex = 5
+        Me.SfButton8.Text = "Fascia 2"
+        '
+        'SfButton9
+        '
+        Me.SfButton9.AccessibleName = "Button"
+        Me.SfButton9.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SfButton9.Location = New System.Drawing.Point(285, 132)
+        Me.SfButton9.Name = "SfButton9"
+        Me.SfButton9.Size = New System.Drawing.Size(55, 20)
+        Me.SfButton9.TabIndex = 5
+        Me.SfButton9.Text = "Fascia 3"
         '
         'frmConfScheduler
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(455, 294)
+        Me.Controls.Add(Me.SfButton9)
+        Me.Controls.Add(Me.SfButton6)
         Me.Controls.Add(Me.SfButton3)
+        Me.Controls.Add(Me.SfButton8)
+        Me.Controls.Add(Me.SfButton5)
         Me.Controls.Add(Me.SfButton2)
+        Me.Controls.Add(Me.SfButton7)
+        Me.Controls.Add(Me.SfButton4)
         Me.Controls.Add(Me.SfButton1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -221,7 +284,6 @@ Partial Class frmConfScheduler
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label20 As Label
@@ -229,4 +291,10 @@ Partial Class frmConfScheduler
     Friend WithEvents SfButton1 As Syncfusion.WinForms.Controls.SfButton
     Friend WithEvents SfButton2 As Syncfusion.WinForms.Controls.SfButton
     Friend WithEvents SfButton3 As Syncfusion.WinForms.Controls.SfButton
+    Friend WithEvents SfButton4 As Syncfusion.WinForms.Controls.SfButton
+    Friend WithEvents SfButton5 As Syncfusion.WinForms.Controls.SfButton
+    Friend WithEvents SfButton6 As Syncfusion.WinForms.Controls.SfButton
+    Friend WithEvents SfButton7 As Syncfusion.WinForms.Controls.SfButton
+    Friend WithEvents SfButton8 As Syncfusion.WinForms.Controls.SfButton
+    Friend WithEvents SfButton9 As Syncfusion.WinForms.Controls.SfButton
 End Class

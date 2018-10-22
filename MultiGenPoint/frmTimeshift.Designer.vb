@@ -27,20 +27,20 @@ Partial Class frmTimeshift
         Me.Cancel_Button = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cbONhour = New System.Windows.Forms.ComboBox()
+        Me.cbONminute = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.cbOFFhour = New System.Windows.Forms.ComboBox()
+        Me.cbOFFminute = New System.Windows.Forms.ComboBox()
+        Me.chkLunedi = New System.Windows.Forms.CheckBox()
+        Me.chkMartedi = New System.Windows.Forms.CheckBox()
+        Me.chkMercoledi = New System.Windows.Forms.CheckBox()
+        Me.chkGiovedi = New System.Windows.Forms.CheckBox()
+        Me.chkVenerdi = New System.Windows.Forms.CheckBox()
+        Me.chkSabato = New System.Windows.Forms.CheckBox()
+        Me.chkDomenica = New System.Windows.Forms.CheckBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -98,25 +98,25 @@ Partial Class frmTimeshift
         Me.Label2.TabIndex = 5
         Me.Label2.Text = ":"
         '
-        'ComboBox1
+        'cbONhour
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"})
-        Me.ComboBox1.Location = New System.Drawing.Point(89, 69)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(46, 21)
-        Me.ComboBox1.TabIndex = 6
-        Me.ComboBox1.Text = "00"
+        Me.cbONhour.FormattingEnabled = True
+        Me.cbONhour.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"})
+        Me.cbONhour.Location = New System.Drawing.Point(89, 69)
+        Me.cbONhour.Name = "cbONhour"
+        Me.cbONhour.Size = New System.Drawing.Size(46, 21)
+        Me.cbONhour.TabIndex = 6
+        Me.cbONhour.Text = "00"
         '
-        'ComboBox2
+        'cbONminute
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"})
-        Me.ComboBox2.Location = New System.Drawing.Point(149, 69)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(46, 21)
-        Me.ComboBox2.TabIndex = 6
-        Me.ComboBox2.Text = "00"
+        Me.cbONminute.FormattingEnabled = True
+        Me.cbONminute.Items.AddRange(New Object() {"00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"})
+        Me.cbONminute.Location = New System.Drawing.Point(149, 69)
+        Me.cbONminute.Name = "cbONminute"
+        Me.cbONminute.Size = New System.Drawing.Size(46, 21)
+        Me.cbONminute.TabIndex = 6
+        Me.cbONminute.Text = "00"
         '
         'Label9
         '
@@ -145,113 +145,113 @@ Partial Class frmTimeshift
         Me.Label11.TabIndex = 5
         Me.Label11.Text = "Fine"
         '
-        'ComboBox3
+        'cbOFFhour
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"})
-        Me.ComboBox3.Location = New System.Drawing.Point(215, 69)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(46, 21)
-        Me.ComboBox3.TabIndex = 6
-        Me.ComboBox3.Text = "00"
+        Me.cbOFFhour.FormattingEnabled = True
+        Me.cbOFFhour.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"})
+        Me.cbOFFhour.Location = New System.Drawing.Point(215, 69)
+        Me.cbOFFhour.Name = "cbOFFhour"
+        Me.cbOFFhour.Size = New System.Drawing.Size(46, 21)
+        Me.cbOFFhour.TabIndex = 6
+        Me.cbOFFhour.Text = "00"
         '
-        'ComboBox4
+        'cbOFFminute
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"})
-        Me.ComboBox4.Location = New System.Drawing.Point(275, 69)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(46, 21)
-        Me.ComboBox4.TabIndex = 6
-        Me.ComboBox4.Text = "00"
+        Me.cbOFFminute.FormattingEnabled = True
+        Me.cbOFFminute.Items.AddRange(New Object() {"00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"})
+        Me.cbOFFminute.Location = New System.Drawing.Point(275, 69)
+        Me.cbOFFminute.Name = "cbOFFminute"
+        Me.cbOFFminute.Size = New System.Drawing.Size(46, 21)
+        Me.cbOFFminute.TabIndex = 6
+        Me.cbOFFminute.Text = "00"
         '
-        'CheckBox1
+        'chkLunedi
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(18, 107)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox1.TabIndex = 7
-        Me.CheckBox1.Text = "Lu"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chkLunedi.AutoSize = True
+        Me.chkLunedi.Location = New System.Drawing.Point(18, 107)
+        Me.chkLunedi.Name = "chkLunedi"
+        Me.chkLunedi.Size = New System.Drawing.Size(37, 17)
+        Me.chkLunedi.TabIndex = 7
+        Me.chkLunedi.Text = "Lu"
+        Me.chkLunedi.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'chkMartedi
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(62, 107)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(42, 17)
-        Me.CheckBox2.TabIndex = 7
-        Me.CheckBox2.Text = "Ma"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.chkMartedi.AutoSize = True
+        Me.chkMartedi.Location = New System.Drawing.Point(62, 107)
+        Me.chkMartedi.Name = "chkMartedi"
+        Me.chkMartedi.Size = New System.Drawing.Size(42, 17)
+        Me.chkMartedi.TabIndex = 7
+        Me.chkMartedi.Text = "Ma"
+        Me.chkMartedi.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'chkMercoledi
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(111, 107)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(42, 17)
-        Me.CheckBox3.TabIndex = 7
-        Me.CheckBox3.Text = "Me"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.chkMercoledi.AutoSize = True
+        Me.chkMercoledi.Location = New System.Drawing.Point(111, 107)
+        Me.chkMercoledi.Name = "chkMercoledi"
+        Me.chkMercoledi.Size = New System.Drawing.Size(42, 17)
+        Me.chkMercoledi.TabIndex = 7
+        Me.chkMercoledi.Text = "Me"
+        Me.chkMercoledi.UseVisualStyleBackColor = True
         '
-        'CheckBox4
+        'chkGiovedi
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(160, 107)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(35, 17)
-        Me.CheckBox4.TabIndex = 7
-        Me.CheckBox4.Text = "Gi"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.chkGiovedi.AutoSize = True
+        Me.chkGiovedi.Location = New System.Drawing.Point(160, 107)
+        Me.chkGiovedi.Name = "chkGiovedi"
+        Me.chkGiovedi.Size = New System.Drawing.Size(35, 17)
+        Me.chkGiovedi.TabIndex = 7
+        Me.chkGiovedi.Text = "Gi"
+        Me.chkGiovedi.UseVisualStyleBackColor = True
         '
-        'CheckBox5
+        'chkVenerdi
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(202, 107)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(38, 17)
-        Me.CheckBox5.TabIndex = 7
-        Me.CheckBox5.Text = "Ve"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.chkVenerdi.AutoSize = True
+        Me.chkVenerdi.Location = New System.Drawing.Point(202, 107)
+        Me.chkVenerdi.Name = "chkVenerdi"
+        Me.chkVenerdi.Size = New System.Drawing.Size(38, 17)
+        Me.chkVenerdi.TabIndex = 7
+        Me.chkVenerdi.Text = "Ve"
+        Me.chkVenerdi.UseVisualStyleBackColor = True
         '
-        'CheckBox6
+        'chkSabato
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(247, 107)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(38, 17)
-        Me.CheckBox6.TabIndex = 7
-        Me.CheckBox6.Text = "Sa"
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.chkSabato.AutoSize = True
+        Me.chkSabato.Location = New System.Drawing.Point(247, 107)
+        Me.chkSabato.Name = "chkSabato"
+        Me.chkSabato.Size = New System.Drawing.Size(38, 17)
+        Me.chkSabato.TabIndex = 7
+        Me.chkSabato.Text = "Sa"
+        Me.chkSabato.UseVisualStyleBackColor = True
         '
-        'CheckBox7
+        'chkDomenica
         '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(292, 107)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(40, 17)
-        Me.CheckBox7.TabIndex = 7
-        Me.CheckBox7.Text = "Do"
-        Me.CheckBox7.UseVisualStyleBackColor = True
+        Me.chkDomenica.AutoSize = True
+        Me.chkDomenica.Location = New System.Drawing.Point(292, 107)
+        Me.chkDomenica.Name = "chkDomenica"
+        Me.chkDomenica.Size = New System.Drawing.Size(40, 17)
+        Me.chkDomenica.TabIndex = 7
+        Me.chkDomenica.Text = "Do"
+        Me.chkDomenica.UseVisualStyleBackColor = True
         '
         'frmTimeshift
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(367, 210)
-        Me.Controls.Add(Me.CheckBox7)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.ComboBox4)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.chkDomenica)
+        Me.Controls.Add(Me.chkSabato)
+        Me.Controls.Add(Me.chkVenerdi)
+        Me.Controls.Add(Me.chkGiovedi)
+        Me.Controls.Add(Me.chkMercoledi)
+        Me.Controls.Add(Me.chkMartedi)
+        Me.Controls.Add(Me.chkLunedi)
+        Me.Controls.Add(Me.cbOFFminute)
+        Me.Controls.Add(Me.cbONminute)
+        Me.Controls.Add(Me.cbOFFhour)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbONhour)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label2)
@@ -276,18 +276,18 @@ Partial Class frmTimeshift
     Friend WithEvents Cancel_Button As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cbONhour As ComboBox
+    Friend WithEvents cbONminute As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents CheckBox7 As CheckBox
+    Friend WithEvents cbOFFhour As ComboBox
+    Friend WithEvents cbOFFminute As ComboBox
+    Friend WithEvents chkLunedi As CheckBox
+    Friend WithEvents chkMartedi As CheckBox
+    Friend WithEvents chkMercoledi As CheckBox
+    Friend WithEvents chkGiovedi As CheckBox
+    Friend WithEvents chkVenerdi As CheckBox
+    Friend WithEvents chkSabato As CheckBox
+    Friend WithEvents chkDomenica As CheckBox
 End Class

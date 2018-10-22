@@ -2,7 +2,7 @@
 
 Public Class frmConfScheduler
     Inherits MetroForm
-
+    Public callingButton As Integer = 0
     Private Sub MetroForm2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -18,15 +18,10 @@ Public Class frmConfScheduler
         Me.Close()
     End Sub
 
-    Private Sub SfButton1_Click(sender As Object, e As EventArgs) Handles SfButton1.Click
+    Private Sub SfButton1_Click(sender As Object, e As EventArgs) Handles SfButton1.Click, SfButton2.Click, SfButton3.Click,
+        SfButton4.Click, SfButton5.Click, SfButton6.Click, SfButton7.Click, SfButton8.Click, SfButton9.Click
+        callingButton = Integer.Parse(Strings.Right(sender.name, 1))
         frmTimeshift.ShowDialog()
     End Sub
 
-    Private Sub SfButton2_Click(sender As Object, e As EventArgs) Handles SfButton2.Click
-        frmTimeshift.ShowDialog()
-    End Sub
-
-    Private Sub SfButton3_Click(sender As Object, e As EventArgs) Handles SfButton3.Click
-        frmTimeshift.ShowDialog()
-    End Sub
 End Class
