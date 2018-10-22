@@ -26,18 +26,21 @@ Public Class frmMain
             F1OffMinute = "00"
             Array.Resize(F1Week, 7)
             F1Week = {Not a, Not a, Not a, Not a, Not a, Not a, Not a}
+
             F2OnHour = "00"
             F2OnMinute = "00"
             F2OffHour = "00"
             F2OffMinute = "00"
             Array.Resize(F2Week, 7)
             F2Week = {a, a, a, a, a, a, a}
-            F2OnHour = "00"
-            F2OnMinute = "00"
-            F2OffHour = "00"
-            F2OffMinute = "00"
+
+            F3OnHour = "00"
+            F3OnMinute = "00"
+            F3OffHour = "00"
+            F3OffMinute = "00"
             Array.Resize(F3Week, 7)
             F3Week = {a, a, a, a, a, a, a}
+
         End Sub
     End Structure
 
@@ -56,17 +59,39 @@ Public Class frmMain
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         frmConfImpianti.visualizzaGeneratoriAttivi()
+        mgtiPSGS.changeName("Tpsgs")
+        mgtiPSGS.changeTemp(0)
+        mgtiPSGS.changeLED(Color.Gray)
+        mgtiCTPI.changeName("Tctpi")
+        mgtiCTPI.changeTemp(0)
+        mgtiCTPI.changeLED(Color.Gray)
+        mgtiGSHP.changeName("Tgshp")
+        mgtiGSHP.changeTemp(0)
+        mgtiGSHP.changeLED(Color.Gray)
+        mgtiASHP.changeName("Tashp")
+        mgtiASHP.changeTemp(0)
+        mgtiASHP.changeLED(Color.Gray)
+        mgtiCFER.changeName("Tcfer")
+        mgtiCFER.changeTemp(0)
+        mgtiCFER.changeLED(Color.Gray)
+        mgtiCFFS.changeName("Tcffs")
+        mgtiCFFS.changeTemp(0)
+        mgtiCFFS.changeLED(Color.Gray)
+
     End Sub
+
 
     Private Sub ConfigurazioneTemperatureToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConfigurazioneTemperatureToolStripMenuItem.Click
         frmConfTemperature.ShowDialog()
     End Sub
 
-    Private Sub ConfigurazonePrioritàEPotenzeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConfigurazonePrioritàEPotenzeToolStripMenuItem.Click
+    Private Sub ConfigurazionePrioritàEPotenzeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConfigurazonePrioritàEPotenzeToolStripMenuItem.Click
         frmConfDispPot.ShowDialog()
     End Sub
 
     Private Sub ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Click
         frmConfScheduler.ShowDialog()
     End Sub
+
+
 End Class

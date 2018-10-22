@@ -29,50 +29,32 @@ Partial Class frmMain
         Me.ConfigurazioneImpiantoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfigurazioneTemperatureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfigurazonePrioritàEPotenzeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mgtiCTPI = New MultiGenTemperatureIconLeft.MultiGenTemperatureIconLeft()
+        Me.mgtiCFFS = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
+        Me.mgtiCFER = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
+        Me.mgtiASHP = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
+        Me.mgtiGSHP = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
+        Me.mgtiPSGS = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
         Me.pbCFFSburner = New System.Windows.Forms.PictureBox()
         Me.pbCFERburner = New System.Windows.Forms.PictureBox()
         Me.pbPSECsolar = New System.Windows.Forms.PictureBox()
-        Me.pbCTPI = New System.Windows.Forms.PictureBox()
-        Me.pbGSHPField = New System.Windows.Forms.PictureBox()
-        Me.pbGSHPsolar = New System.Windows.Forms.PictureBox()
         Me.pbGSHP = New System.Windows.Forms.PictureBox()
         Me.pbASHP = New System.Windows.Forms.PictureBox()
+        Me.pbCTPI = New System.Windows.Forms.PictureBox()
+        Me.pbGSHPField = New System.Windows.Forms.PictureBox()
+        Me.pbPSGS = New System.Windows.Forms.PictureBox()
         Me.pbSfondo = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCFFSburner, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCFERburner, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPSECsolar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbCTPI, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbGSHPField, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbGSHPsolar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbGSHP, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbASHP, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbCTPI, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbGSHPField, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPSGS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbSfondo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -123,21 +105,90 @@ Partial Class frmMain
         Me.ConfigurazonePrioritàEPotenzeToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
         Me.ConfigurazonePrioritàEPotenzeToolStripMenuItem.Text = "Co&nfigurazione priorità e potenze..."
         '
-        'PictureBox1
+        'ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem
         '
-        Me.PictureBox1.Image = Global.MultiGenPoint.My.Resources.Resources.thermometer_symbol
-        Me.PictureBox1.Location = New System.Drawing.Point(295, 495)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
+        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Name = "ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem"
+        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
+        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Text = "Con&figurazione schedulazione di convenienza..."
+        '
+        'mgtiCTPI
+        '
+        Me.mgtiCTPI.BackColor = System.Drawing.Color.Transparent
+        Me.mgtiCTPI.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mgtiCTPI.LEDcolor = System.Drawing.Color.Empty
+        Me.mgtiCTPI.Location = New System.Drawing.Point(12, 133)
+        Me.mgtiCTPI.Name = "mgtiCTPI"
+        Me.mgtiCTPI.Size = New System.Drawing.Size(75, 55)
+        Me.mgtiCTPI.TabIndex = 22
+        Me.mgtiCTPI.TempValue = 0R
+        Me.mgtiCTPI.Tname = Nothing
+        '
+        'mgtiCFFS
+        '
+        Me.mgtiCFFS.BackColor = System.Drawing.Color.Transparent
+        Me.mgtiCFFS.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mgtiCFFS.LEDcolor = System.Drawing.Color.Empty
+        Me.mgtiCFFS.Location = New System.Drawing.Point(786, 418)
+        Me.mgtiCFFS.Name = "mgtiCFFS"
+        Me.mgtiCFFS.Size = New System.Drawing.Size(75, 55)
+        Me.mgtiCFFS.TabIndex = 25
+        Me.mgtiCFFS.TempValue = 0R
+        Me.mgtiCFFS.Tname = Nothing
+        '
+        'mgtiCFER
+        '
+        Me.mgtiCFER.BackColor = System.Drawing.Color.Transparent
+        Me.mgtiCFER.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mgtiCFER.LEDcolor = System.Drawing.Color.Empty
+        Me.mgtiCFER.Location = New System.Drawing.Point(692, 418)
+        Me.mgtiCFER.Name = "mgtiCFER"
+        Me.mgtiCFER.Size = New System.Drawing.Size(75, 55)
+        Me.mgtiCFER.TabIndex = 25
+        Me.mgtiCFER.TempValue = 0R
+        Me.mgtiCFER.Tname = Nothing
+        '
+        'mgtiASHP
+        '
+        Me.mgtiASHP.BackColor = System.Drawing.Color.Transparent
+        Me.mgtiASHP.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mgtiASHP.LEDcolor = System.Drawing.Color.Empty
+        Me.mgtiASHP.Location = New System.Drawing.Point(295, 495)
+        Me.mgtiASHP.Name = "mgtiASHP"
+        Me.mgtiASHP.Size = New System.Drawing.Size(75, 55)
+        Me.mgtiASHP.TabIndex = 24
+        Me.mgtiASHP.TempValue = 0R
+        Me.mgtiASHP.Tname = Nothing
+        '
+        'mgtiGSHP
+        '
+        Me.mgtiGSHP.BackColor = System.Drawing.Color.Transparent
+        Me.mgtiGSHP.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mgtiGSHP.LEDcolor = System.Drawing.Color.Empty
+        Me.mgtiGSHP.Location = New System.Drawing.Point(157, 409)
+        Me.mgtiGSHP.Name = "mgtiGSHP"
+        Me.mgtiGSHP.Size = New System.Drawing.Size(75, 55)
+        Me.mgtiGSHP.TabIndex = 23
+        Me.mgtiGSHP.TempValue = 0R
+        Me.mgtiGSHP.Tname = Nothing
+        '
+        'mgtiPSGS
+        '
+        Me.mgtiPSGS.BackColor = System.Drawing.Color.Transparent
+        Me.mgtiPSGS.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mgtiPSGS.LEDcolor = System.Drawing.Color.Empty
+        Me.mgtiPSGS.Location = New System.Drawing.Point(42, 61)
+        Me.mgtiPSGS.Name = "mgtiPSGS"
+        Me.mgtiPSGS.Size = New System.Drawing.Size(75, 55)
+        Me.mgtiPSGS.TabIndex = 21
+        Me.mgtiPSGS.TempValue = 0R
+        Me.mgtiPSGS.Tname = ""
         '
         'pbCFFSburner
         '
         Me.pbCFFSburner.Image = Global.MultiGenPoint.My.Resources.Resources.snippet_gas_fired_CFFS
         Me.pbCFFSburner.Location = New System.Drawing.Point(779, 276)
         Me.pbCFFSburner.Name = "pbCFFSburner"
-        Me.pbCFFSburner.Size = New System.Drawing.Size(91, 194)
+        Me.pbCFFSburner.Size = New System.Drawing.Size(91, 145)
         Me.pbCFFSburner.TabIndex = 7
         Me.pbCFFSburner.TabStop = False
         Me.pbCFFSburner.Visible = False
@@ -147,7 +198,7 @@ Partial Class frmMain
         Me.pbCFERburner.Image = Global.MultiGenPoint.My.Resources.Resources.snippet_wood_fired_CFER
         Me.pbCFERburner.Location = New System.Drawing.Point(682, 276)
         Me.pbCFERburner.Name = "pbCFERburner"
-        Me.pbCFERburner.Size = New System.Drawing.Size(91, 194)
+        Me.pbCFERburner.Size = New System.Drawing.Size(91, 145)
         Me.pbCFERburner.TabIndex = 7
         Me.pbCFERburner.TabStop = False
         Me.pbCFERburner.Visible = False
@@ -161,6 +212,25 @@ Partial Class frmMain
         Me.pbPSECsolar.TabIndex = 6
         Me.pbPSECsolar.TabStop = False
         Me.pbPSECsolar.Visible = False
+        '
+        'pbGSHP
+        '
+        Me.pbGSHP.Image = Global.MultiGenPoint.My.Resources.Resources.snippet_gshp
+        Me.pbGSHP.Location = New System.Drawing.Point(376, 230)
+        Me.pbGSHP.Name = "pbGSHP"
+        Me.pbGSHP.Size = New System.Drawing.Size(315, 180)
+        Me.pbGSHP.TabIndex = 3
+        Me.pbGSHP.TabStop = False
+        Me.pbGSHP.Visible = False
+        '
+        'pbASHP
+        '
+        Me.pbASHP.Image = Global.MultiGenPoint.My.Resources.Resources.snippet_ashp
+        Me.pbASHP.Location = New System.Drawing.Point(376, 283)
+        Me.pbASHP.Name = "pbASHP"
+        Me.pbASHP.Size = New System.Drawing.Size(615, 324)
+        Me.pbASHP.TabIndex = 8
+        Me.pbASHP.TabStop = False
         '
         'pbCTPI
         '
@@ -184,34 +254,15 @@ Partial Class frmMain
         Me.pbGSHPField.TabStop = False
         Me.pbGSHPField.Visible = False
         '
-        'pbGSHPsolar
+        'pbPSGS
         '
-        Me.pbGSHPsolar.Image = Global.MultiGenPoint.My.Resources.Resources.snippet_solare_gshp
-        Me.pbGSHPsolar.Location = New System.Drawing.Point(119, 36)
-        Me.pbGSHPsolar.Name = "pbGSHPsolar"
-        Me.pbGSHPsolar.Size = New System.Drawing.Size(208, 367)
-        Me.pbGSHPsolar.TabIndex = 4
-        Me.pbGSHPsolar.TabStop = False
-        Me.pbGSHPsolar.Visible = False
-        '
-        'pbGSHP
-        '
-        Me.pbGSHP.Image = Global.MultiGenPoint.My.Resources.Resources.snippet_gshp
-        Me.pbGSHP.Location = New System.Drawing.Point(362, 230)
-        Me.pbGSHP.Name = "pbGSHP"
-        Me.pbGSHP.Size = New System.Drawing.Size(315, 180)
-        Me.pbGSHP.TabIndex = 3
-        Me.pbGSHP.TabStop = False
-        Me.pbGSHP.Visible = False
-        '
-        'pbASHP
-        '
-        Me.pbASHP.Image = Global.MultiGenPoint.My.Resources.Resources.snippet_ashp
-        Me.pbASHP.Location = New System.Drawing.Point(376, 283)
-        Me.pbASHP.Name = "pbASHP"
-        Me.pbASHP.Size = New System.Drawing.Size(615, 324)
-        Me.pbASHP.TabIndex = 8
-        Me.pbASHP.TabStop = False
+        Me.pbPSGS.Image = Global.MultiGenPoint.My.Resources.Resources.snippet_solare_gshp
+        Me.pbPSGS.Location = New System.Drawing.Point(119, 36)
+        Me.pbPSGS.Name = "pbPSGS"
+        Me.pbPSGS.Size = New System.Drawing.Size(208, 367)
+        Me.pbPSGS.TabIndex = 4
+        Me.pbPSGS.TabStop = False
+        Me.pbPSGS.Visible = False
         '
         'pbSfondo
         '
@@ -223,196 +274,25 @@ Partial Class frmMain
         Me.pbSfondo.TabIndex = 0
         Me.pbSfondo.TabStop = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(331, 514)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "99.9°C"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(331, 495)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
-        Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Tashp"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.MultiGenPoint.My.Resources.Resources.thermometer_symbol
-        Me.PictureBox2.Location = New System.Drawing.Point(712, 296)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox2.TabIndex = 9
-        Me.PictureBox2.TabStop = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(669, 315)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "99.9°C"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(676, 296)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(32, 13)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "Tcfer"
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.MultiGenPoint.My.Resources.Resources.thermometer_symbol
-        Me.PictureBox3.Location = New System.Drawing.Point(812, 296)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox3.TabIndex = 9
-        Me.PictureBox3.TabStop = False
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(768, 315)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 13)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "99.9°C"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(776, 296)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(31, 13)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Tcffs"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(320, 245)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 13)
-        Me.Label7.TabIndex = 13
-        Me.Label7.Text = "Tgshp"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(320, 264)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 13)
-        Me.Label8.TabIndex = 12
-        Me.Label8.Text = "99.9°C"
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.MultiGenPoint.My.Resources.Resources.thermometer_symbol
-        Me.PictureBox4.Location = New System.Drawing.Point(284, 245)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox4.TabIndex = 11
-        Me.PictureBox4.TabStop = False
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(36, 296)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(31, 13)
-        Me.Label9.TabIndex = 16
-        Me.Label9.Text = "Tctpi"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(36, 315)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(39, 13)
-        Me.Label10.TabIndex = 15
-        Me.Label10.Text = "99.9°C"
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.MultiGenPoint.My.Resources.Resources.thermometer_symbol
-        Me.PictureBox5.Location = New System.Drawing.Point(0, 296)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox5.TabIndex = 14
-        Me.PictureBox5.TabStop = False
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(140, 296)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(36, 13)
-        Me.Label11.TabIndex = 19
-        Me.Label11.Text = "Tpsgs"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(140, 315)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(39, 13)
-        Me.Label12.TabIndex = 18
-        Me.Label12.Text = "99.9°C"
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.MultiGenPoint.My.Resources.Resources.thermometer_symbol
-        Me.PictureBox6.Location = New System.Drawing.Point(104, 296)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox6.TabIndex = 17
-        Me.PictureBox6.TabStop = False
-        '
-        'ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem
-        '
-        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Name = "ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem"
-        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
-        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Text = "Con&figurazione schedulazione di convenienza..."
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1012, 732)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.pbCFFSburner)
         Me.Controls.Add(Me.pbCFERburner)
         Me.Controls.Add(Me.pbPSECsolar)
+        Me.Controls.Add(Me.mgtiCFFS)
+        Me.Controls.Add(Me.mgtiCFER)
+        Me.Controls.Add(Me.mgtiASHP)
+        Me.Controls.Add(Me.mgtiGSHP)
+        Me.Controls.Add(Me.mgtiCTPI)
+        Me.Controls.Add(Me.mgtiPSGS)
         Me.Controls.Add(Me.pbGSHP)
         Me.Controls.Add(Me.pbASHP)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pbCTPI)
         Me.Controls.Add(Me.pbGSHPField)
-        Me.Controls.Add(Me.pbGSHPsolar)
+        Me.Controls.Add(Me.pbPSGS)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pbSfondo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
@@ -425,21 +305,15 @@ Partial Class frmMain
         Me.Text = "MultiGenPoint"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCFFSburner, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCFERburner, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbPSECsolar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbCTPI, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbGSHPField, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbGSHPsolar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbGSHP, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbASHP, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbCTPI, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbGSHPField, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPSGS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbSfondo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -451,32 +325,20 @@ Partial Class frmMain
     Friend WithEvents ConfigurazioneImpiantoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents pbGSHPField As PictureBox
     Friend WithEvents pbGSHP As PictureBox
-    Friend WithEvents pbGSHPsolar As PictureBox
+    Friend WithEvents pbPSGS As PictureBox
     Friend WithEvents pbCTPI As PictureBox
     Friend WithEvents pbPSECsolar As PictureBox
     Friend WithEvents pbSfondo As PictureBox
     Friend WithEvents pbCFERburner As PictureBox
     Friend WithEvents pbCFFSburner As PictureBox
     Friend WithEvents pbASHP As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ConfigurazioneTemperatureToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents ConfigurazonePrioritàEPotenzeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mgtiPSGS As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
+    Friend WithEvents mgtiCTPI As MultiGenTemperatureIconLeft.MultiGenTemperatureIconLeft
+    Friend WithEvents mgtiGSHP As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
+    Friend WithEvents mgtiASHP As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
+    Friend WithEvents mgtiCFER As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
+    Friend WithEvents mgtiCFFS As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
 End Class

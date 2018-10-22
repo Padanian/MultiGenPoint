@@ -125,8 +125,41 @@ Public Class frmTimeshift
             frmMain.GenCFER_SchedulerStructure.F3Week(5) = chkSabato.Checked
             frmMain.GenCFER_SchedulerStructure.F3Week(6) = chkDomenica.Checked
         ElseIf frmConfScheduler.callingButton = 7 Then
+            frmMain.GenHP_SchedulerStructure.F1OnHour = cbONhour.Text
+            frmMain.GenHP_SchedulerStructure.F1OnMinute = cbONminute.Text
+            frmMain.GenHP_SchedulerStructure.F1OffHour = cbOFFhour.Text
+            frmMain.GenHP_SchedulerStructure.F1OffMinute = cbOFFminute.Text
+            frmMain.GenHP_SchedulerStructure.F1Week(0) = chkLunedi.Checked
+            frmMain.GenHP_SchedulerStructure.F1Week(1) = chkMartedi.Checked
+            frmMain.GenHP_SchedulerStructure.F1Week(2) = chkMercoledi.Checked
+            frmMain.GenHP_SchedulerStructure.F1Week(3) = chkGiovedi.Checked
+            frmMain.GenHP_SchedulerStructure.F1Week(4) = chkVenerdi.Checked
+            frmMain.GenHP_SchedulerStructure.F1Week(5) = chkSabato.Checked
+            frmMain.GenHP_SchedulerStructure.F1Week(6) = chkDomenica.Checked
         ElseIf frmConfScheduler.callingButton = 8 Then
+            frmMain.GenHP_SchedulerStructure.F2OnHour = cbONhour.Text
+            frmMain.GenHP_SchedulerStructure.F2OnMinute = cbONminute.Text
+            frmMain.GenHP_SchedulerStructure.F2OffHour = cbOFFhour.Text
+            frmMain.GenHP_SchedulerStructure.F2OffMinute = cbOFFminute.Text
+            frmMain.GenHP_SchedulerStructure.F2Week(0) = chkLunedi.Checked
+            frmMain.GenHP_SchedulerStructure.F2Week(1) = chkMartedi.Checked
+            frmMain.GenHP_SchedulerStructure.F2Week(2) = chkMercoledi.Checked
+            frmMain.GenHP_SchedulerStructure.F2Week(3) = chkGiovedi.Checked
+            frmMain.GenHP_SchedulerStructure.F2Week(4) = chkVenerdi.Checked
+            frmMain.GenHP_SchedulerStructure.F2Week(5) = chkSabato.Checked
+            frmMain.GenHP_SchedulerStructure.F2Week(6) = chkDomenica.Checked
         ElseIf frmConfScheduler.callingButton = 9 Then
+            frmMain.GenHP_SchedulerStructure.F3OnHour = cbONhour.Text
+            frmMain.GenHP_SchedulerStructure.F3OnMinute = cbONminute.Text
+            frmMain.GenHP_SchedulerStructure.F3OffHour = cbOFFhour.Text
+            frmMain.GenHP_SchedulerStructure.F3OffMinute = cbOFFminute.Text
+            frmMain.GenHP_SchedulerStructure.F3Week(0) = chkLunedi.Checked
+            frmMain.GenHP_SchedulerStructure.F3Week(1) = chkMartedi.Checked
+            frmMain.GenHP_SchedulerStructure.F3Week(2) = chkMercoledi.Checked
+            frmMain.GenHP_SchedulerStructure.F3Week(3) = chkGiovedi.Checked
+            frmMain.GenHP_SchedulerStructure.F3Week(4) = chkVenerdi.Checked
+            frmMain.GenHP_SchedulerStructure.F3Week(5) = chkSabato.Checked
+            frmMain.GenHP_SchedulerStructure.F3Week(6) = chkDomenica.Checked
         Else
             MsgBox("Situazione inaspettata.")
             Exit Sub

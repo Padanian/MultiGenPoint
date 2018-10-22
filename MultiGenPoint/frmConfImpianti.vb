@@ -59,40 +59,52 @@ Public Class frmConfImpianti
 
         If My.Settings.cfgConfImpianto0 Then
             frmMain.pbCFFSburner.Visible = True
+            frmMain.mgtiCFFS.Visible = True
         Else
             frmMain.pbCFFSburner.Visible = False
+            frmMain.mgtiCFFS.Visible = False
         End If
 
         If My.Settings.cfgConfImpianto1 Then
             frmMain.pbCFERburner.Visible = True
+            frmMain.mgtiCFER.Visible = True
         Else
             frmMain.pbCFERburner.Visible = False
+            frmMain.mgtiCFER.Visible = False
         End If
 
         If My.Settings.cfgConfImpianto2 Then
             frmMain.pbASHP.Visible = True
+            frmMain.mgtiASHP.Visible = True
         Else
             frmMain.pbASHP.Visible = False
+            frmMain.mgtiASHP.Visible = False
         End If
 
         If My.Settings.cfgConfImpianto3 Then
             frmMain.pbGSHP.Visible = True
             frmMain.pbGSHPField.Visible = True
+            frmMain.mgtiGSHP.Visible = True
         Else
             frmMain.pbGSHP.Visible = False
             frmMain.pbGSHPField.Visible = False
+            frmMain.mgtiGSHP.Visible = False
         End If
 
         If My.Settings.cfgConfImpianto4 Then
-            frmMain.pbGSHPsolar.Visible = True
+            frmMain.pbPSGS.Visible = True
+            frmMain.mgtiPSGS.Visible = True
         Else
-            frmMain.pbGSHPsolar.Visible = False
+            frmMain.pbPSGS.Visible = False
+            frmMain.mgtiPSGS.Visible = False
         End If
 
         If My.Settings.cfgConfImpianto5 Then
             frmMain.pbCTPI.Visible = True
+            frmMain.mgtiCTPI.Visible = True
         Else
             frmMain.pbCTPI.Visible = False
+            frmMain.mgtiCTPI.Visible = False
         End If
 
         If My.Settings.cfgConfImpianto6 Then
@@ -122,45 +134,57 @@ Public Class frmConfImpianti
         'Se è attivo il fossile, visualizzalo
         If clbConfImpianto.CheckedIndices.Contains(0) Then
             frmMain.pbCFFSburner.Visible = True
+            frmMain.mgtiCFFS.Visible = True
         Else
             frmMain.pbCFFSburner.Visible = False
+            frmMain.mgtiCFFS.Visible = False
         End If
 
         'Se è attivo il biomassa, visualizzala
         If clbConfImpianto.CheckedIndices.Contains(1) Then
             frmMain.pbCFERburner.Visible = True
+            frmMain.mgtiCFER.Visible = True
         Else
             frmMain.pbCFERburner.Visible = False
+            frmMain.mgtiCFER.Visible = False
         End If
 
         'Se è attiva la pdc ad aria, visualizzala
         If clbConfImpianto.CheckedIndices.Contains(2) Then
             frmMain.pbASHP.Visible = True
+            frmMain.mgtiASHP.Visible = True
         Else
             frmMain.pbASHP.Visible = False
+            frmMain.mgtiASHP.Visible = False
         End If
 
         'Se è attiva la pdc ad acqua, visualizzala assieme al suo campo geotermico
         If clbConfImpianto.CheckedIndices.Contains(3) Then
             frmMain.pbGSHP.Visible = True
             frmMain.pbGSHPField.Visible = True
+            frmMain.mgtiGSHP.Visible = True
         Else
             frmMain.pbGSHP.Visible = False
             frmMain.pbGSHPField.Visible = False
+            frmMain.mgtiGSHP.Visible = False
         End If
 
         'Se è attivo il solare, visualizzalo
         If clbConfImpianto.CheckedIndices.Contains(4) Then
-            frmMain.pbGSHPsolar.Visible = True
+            frmMain.pbPSGS.Visible = True
+            frmMain.mgtiPSGS.Visible = True
         Else
-            frmMain.pbGSHPsolar.Visible = False
+            frmMain.pbPSGS.Visible = False
+            frmMain.mgtiPSGS.Visible = False
         End If
 
         'Se è attivo il cascame termico, visualizzalo
         If clbConfImpianto.CheckedIndices.Contains(5) Then
             frmMain.pbCTPI.Visible = True
+            frmMain.mgtiCTPI.Visible = True
         Else
             frmMain.pbCTPI.Visible = False
+            frmMain.mgtiCTPI.Visible = False
         End If
 
         'Se è attivo l'ACS PSEC, visualizzalo
