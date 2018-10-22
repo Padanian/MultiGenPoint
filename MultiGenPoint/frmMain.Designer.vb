@@ -27,6 +27,8 @@ Partial Class frmMain
         Me.EsciToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfigurazioneImpiantoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConfigurazioneTemperatureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConfigurazonePrioritàEPotenzeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pbCFFSburner = New System.Windows.Forms.PictureBox()
         Me.pbCFERburner = New System.Windows.Forms.PictureBox()
@@ -54,7 +56,7 @@ Partial Class frmMain
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.ConfigurazioneTemperatureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCFFSburner, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,16 +100,28 @@ Partial Class frmMain
         '
         'ModificaToolStripMenuItem
         '
-        Me.ModificaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConfigurazioneImpiantoToolStripMenuItem, Me.ConfigurazioneTemperatureToolStripMenuItem})
+        Me.ModificaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConfigurazioneImpiantoToolStripMenuItem, Me.ConfigurazioneTemperatureToolStripMenuItem, Me.ConfigurazonePrioritàEPotenzeToolStripMenuItem, Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem})
         Me.ModificaToolStripMenuItem.Name = "ModificaToolStripMenuItem"
-        Me.ModificaToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
-        Me.ModificaToolStripMenuItem.Text = "&Modifica"
+        Me.ModificaToolStripMenuItem.Size = New System.Drawing.Size(148, 20)
+        Me.ModificaToolStripMenuItem.Text = "&Modifica configurazione"
         '
         'ConfigurazioneImpiantoToolStripMenuItem
         '
         Me.ConfigurazioneImpiantoToolStripMenuItem.Name = "ConfigurazioneImpiantoToolStripMenuItem"
-        Me.ConfigurazioneImpiantoToolStripMenuItem.Size = New System.Drawing.Size(232, 22)
+        Me.ConfigurazioneImpiantoToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
         Me.ConfigurazioneImpiantoToolStripMenuItem.Text = "&Configurazione impianto..."
+        '
+        'ConfigurazioneTemperatureToolStripMenuItem
+        '
+        Me.ConfigurazioneTemperatureToolStripMenuItem.Name = "ConfigurazioneTemperatureToolStripMenuItem"
+        Me.ConfigurazioneTemperatureToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
+        Me.ConfigurazioneTemperatureToolStripMenuItem.Text = "C&onfigurazione temperature..."
+        '
+        'ConfigurazonePrioritàEPotenzeToolStripMenuItem
+        '
+        Me.ConfigurazonePrioritàEPotenzeToolStripMenuItem.Name = "ConfigurazonePrioritàEPotenzeToolStripMenuItem"
+        Me.ConfigurazonePrioritàEPotenzeToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
+        Me.ConfigurazonePrioritàEPotenzeToolStripMenuItem.Text = "Co&nfigurazione priorità e potenze..."
         '
         'PictureBox1
         '
@@ -362,17 +376,28 @@ Partial Class frmMain
         Me.PictureBox6.TabIndex = 17
         Me.PictureBox6.TabStop = False
         '
-        'ConfigurazioneTemperatureToolStripMenuItem
+        'ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem
         '
-        Me.ConfigurazioneTemperatureToolStripMenuItem.Name = "ConfigurazioneTemperatureToolStripMenuItem"
-        Me.ConfigurazioneTemperatureToolStripMenuItem.Size = New System.Drawing.Size(232, 22)
-        Me.ConfigurazioneTemperatureToolStripMenuItem.Text = "C&onfigurazione temperature..."
+        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Name = "ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem"
+        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
+        Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem.Text = "Con&figurazione schedulazione di convenienza..."
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1012, 732)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.pbCFFSburner)
+        Me.Controls.Add(Me.pbCFERburner)
+        Me.Controls.Add(Me.pbPSECsolar)
+        Me.Controls.Add(Me.pbGSHP)
+        Me.Controls.Add(Me.pbASHP)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.PictureBox6)
@@ -382,24 +407,13 @@ Partial Class frmMain
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.pbCFFSburner)
-        Me.Controls.Add(Me.pbCFERburner)
-        Me.Controls.Add(Me.pbPSECsolar)
         Me.Controls.Add(Me.pbCTPI)
         Me.Controls.Add(Me.pbGSHPField)
         Me.Controls.Add(Me.pbGSHPsolar)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.pbGSHP)
-        Me.Controls.Add(Me.pbASHP)
         Me.Controls.Add(Me.pbSfondo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MainMenuStrip = Me.MenuStrip1
@@ -463,4 +477,6 @@ Partial Class frmMain
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents ConfigurazonePrioritàEPotenzeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem As ToolStripMenuItem
 End Class

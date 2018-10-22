@@ -64,9 +64,6 @@ Partial Class frmConfTemperature
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label30 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
@@ -76,10 +73,6 @@ Partial Class frmConfTemperature
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
-        Me.NumericUpDownExt13 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
-        Me.NumericUpDownExt14 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
-        Me.NumericUpDownExt15 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
-        Me.NumericUpDownExt16 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
         Me.NumericUpDownExt17 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
         Me.NumericUpDownExt18 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
         Me.NumericUpDownExt19 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
@@ -103,6 +96,9 @@ Partial Class frmConfTemperature
         Me.Label52 = New System.Windows.Forms.Label()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.NumericUpDownExt1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -116,10 +112,6 @@ Partial Class frmConfTemperature
         CType(Me.NumericUpDownExt10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDownExt13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDownExt14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDownExt15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDownExt16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt19, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -191,7 +183,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt1.Name = "NumericUpDownExt1"
         Me.NumericUpDownExt1.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt1.TabIndex = 3
-        Me.NumericUpDownExt1.Value = New Decimal(New Integer() {25, 0, 0, 0})
+        Me.NumericUpDownExt1.Value = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NumericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'Label2
@@ -220,7 +212,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt2.Name = "NumericUpDownExt2"
         Me.NumericUpDownExt2.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt2.TabIndex = 3
-        Me.NumericUpDownExt2.Value = New Decimal(New Integer() {25, 0, 0, 0})
+        Me.NumericUpDownExt2.Value = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NumericUpDownExt2.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt3
@@ -239,7 +231,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt3.Name = "NumericUpDownExt3"
         Me.NumericUpDownExt3.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt3.TabIndex = 3
-        Me.NumericUpDownExt3.Value = New Decimal(New Integer() {2, 0, 0, -2147483648})
+        Me.NumericUpDownExt3.Value = New Decimal(New Integer() {15, 0, 0, -2147483648})
         Me.NumericUpDownExt3.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt4
@@ -258,7 +250,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt4.Name = "NumericUpDownExt4"
         Me.NumericUpDownExt4.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt4.TabIndex = 3
-        Me.NumericUpDownExt4.Value = New Decimal(New Integer() {25, 0, 0, 0})
+        Me.NumericUpDownExt4.Value = New Decimal(New Integer() {10, 0, 0, 0})
         Me.NumericUpDownExt4.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt5
@@ -277,7 +269,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt5.Name = "NumericUpDownExt5"
         Me.NumericUpDownExt5.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt5.TabIndex = 3
-        Me.NumericUpDownExt5.Value = New Decimal(New Integer() {25, 0, 0, 0})
+        Me.NumericUpDownExt5.Value = New Decimal(New Integer() {20, 0, 0, 0})
         Me.NumericUpDownExt5.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt6
@@ -296,7 +288,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt6.Name = "NumericUpDownExt6"
         Me.NumericUpDownExt6.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt6.TabIndex = 3
-        Me.NumericUpDownExt6.Value = New Decimal(New Integer() {25, 0, 0, 0})
+        Me.NumericUpDownExt6.Value = New Decimal(New Integer() {20, 0, 0, 0})
         Me.NumericUpDownExt6.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'Label3
@@ -445,7 +437,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt7.Name = "NumericUpDownExt7"
         Me.NumericUpDownExt7.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt7.TabIndex = 3
-        Me.NumericUpDownExt7.Value = New Decimal(New Integer() {75, 0, 0, 0})
+        Me.NumericUpDownExt7.Value = New Decimal(New Integer() {95, 0, 0, 0})
         Me.NumericUpDownExt7.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt8
@@ -464,7 +456,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt8.Name = "NumericUpDownExt8"
         Me.NumericUpDownExt8.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt8.TabIndex = 3
-        Me.NumericUpDownExt8.Value = New Decimal(New Integer() {75, 0, 0, 0})
+        Me.NumericUpDownExt8.Value = New Decimal(New Integer() {95, 0, 0, 0})
         Me.NumericUpDownExt8.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt9
@@ -483,7 +475,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt9.Name = "NumericUpDownExt9"
         Me.NumericUpDownExt9.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt9.TabIndex = 3
-        Me.NumericUpDownExt9.Value = New Decimal(New Integer() {15, 0, 0, 0})
+        Me.NumericUpDownExt9.Value = New Decimal(New Integer() {35, 0, 0, 0})
         Me.NumericUpDownExt9.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt10
@@ -521,7 +513,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt11.Name = "NumericUpDownExt11"
         Me.NumericUpDownExt11.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt11.TabIndex = 3
-        Me.NumericUpDownExt11.Value = New Decimal(New Integer() {50, 0, 0, 0})
+        Me.NumericUpDownExt11.Value = New Decimal(New Integer() {60, 0, 0, 0})
         Me.NumericUpDownExt11.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt12
@@ -540,7 +532,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt12.Name = "NumericUpDownExt12"
         Me.NumericUpDownExt12.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt12.TabIndex = 3
-        Me.NumericUpDownExt12.Value = New Decimal(New Integer() {50, 0, 0, 0})
+        Me.NumericUpDownExt12.Value = New Decimal(New Integer() {60, 0, 0, 0})
         Me.NumericUpDownExt12.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'Label16
@@ -663,45 +655,15 @@ Partial Class frmConfTemperature
         Me.Label27.TabIndex = 4
         Me.Label27.Text = "°C"
         '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(521, 481)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(18, 13)
-        Me.Label28.TabIndex = 43
-        Me.Label28.Text = "°C"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(215, 481)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(18, 13)
-        Me.Label29.TabIndex = 32
-        Me.Label29.Text = "°C"
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(521, 455)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(18, 13)
-        Me.Label30.TabIndex = 33
-        Me.Label30.Text = "°C"
-        '
         'Label31
         '
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(215, 455)
+        Me.Label31.Location = New System.Drawing.Point(160, 455)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(18, 13)
+        Me.Label31.Size = New System.Drawing.Size(83, 13)
         Me.Label31.TabIndex = 34
-        Me.Label31.Text = "°C"
+        Me.Label31.Text = "(non applicabile)"
         '
         'Label32
         '
@@ -783,82 +745,6 @@ Partial Class frmConfTemperature
         Me.Label39.TabIndex = 41
         Me.Label39.Text = "°C"
         '
-        'NumericUpDownExt13
-        '
-        Me.NumericUpDownExt13.BeforeTouchSize = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt13.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDownExt13.DecimalPlaces = 1
-        Me.NumericUpDownExt13.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDownExt13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.NumericUpDownExt13.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
-        Me.NumericUpDownExt13.Location = New System.Drawing.Point(469, 474)
-        Me.NumericUpDownExt13.Maximum = New Decimal(New Integer() {150, 0, 0, 0})
-        Me.NumericUpDownExt13.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt13.Minimum = New Decimal(New Integer() {50, 0, 0, -2147483648})
-        Me.NumericUpDownExt13.Name = "NumericUpDownExt13"
-        Me.NumericUpDownExt13.Size = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt13.TabIndex = 30
-        Me.NumericUpDownExt13.Value = New Decimal(New Integer() {50, 0, 0, 0})
-        Me.NumericUpDownExt13.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
-        '
-        'NumericUpDownExt14
-        '
-        Me.NumericUpDownExt14.BeforeTouchSize = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt14.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDownExt14.DecimalPlaces = 1
-        Me.NumericUpDownExt14.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDownExt14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.NumericUpDownExt14.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
-        Me.NumericUpDownExt14.Location = New System.Drawing.Point(163, 474)
-        Me.NumericUpDownExt14.Maximum = New Decimal(New Integer() {150, 0, 0, 0})
-        Me.NumericUpDownExt14.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt14.Minimum = New Decimal(New Integer() {50, 0, 0, -2147483648})
-        Me.NumericUpDownExt14.Name = "NumericUpDownExt14"
-        Me.NumericUpDownExt14.Size = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt14.TabIndex = 29
-        Me.NumericUpDownExt14.Value = New Decimal(New Integer() {25, 0, 0, 0})
-        Me.NumericUpDownExt14.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
-        '
-        'NumericUpDownExt15
-        '
-        Me.NumericUpDownExt15.BeforeTouchSize = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt15.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDownExt15.DecimalPlaces = 1
-        Me.NumericUpDownExt15.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDownExt15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.NumericUpDownExt15.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
-        Me.NumericUpDownExt15.Location = New System.Drawing.Point(469, 448)
-        Me.NumericUpDownExt15.Maximum = New Decimal(New Integer() {150, 0, 0, 0})
-        Me.NumericUpDownExt15.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt15.Minimum = New Decimal(New Integer() {50, 0, 0, -2147483648})
-        Me.NumericUpDownExt15.Name = "NumericUpDownExt15"
-        Me.NumericUpDownExt15.Size = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt15.TabIndex = 28
-        Me.NumericUpDownExt15.Value = New Decimal(New Integer() {50, 0, 0, 0})
-        Me.NumericUpDownExt15.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
-        '
-        'NumericUpDownExt16
-        '
-        Me.NumericUpDownExt16.BeforeTouchSize = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt16.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDownExt16.DecimalPlaces = 1
-        Me.NumericUpDownExt16.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDownExt16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.NumericUpDownExt16.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
-        Me.NumericUpDownExt16.Location = New System.Drawing.Point(163, 448)
-        Me.NumericUpDownExt16.Maximum = New Decimal(New Integer() {150, 0, 0, 0})
-        Me.NumericUpDownExt16.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt16.Minimum = New Decimal(New Integer() {50, 0, 0, -2147483648})
-        Me.NumericUpDownExt16.Name = "NumericUpDownExt16"
-        Me.NumericUpDownExt16.Size = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt16.TabIndex = 27
-        Me.NumericUpDownExt16.Value = New Decimal(New Integer() {25, 0, 0, 0})
-        Me.NumericUpDownExt16.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
-        '
         'NumericUpDownExt17
         '
         Me.NumericUpDownExt17.BeforeTouchSize = New System.Drawing.Size(50, 22)
@@ -913,7 +799,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt19.Name = "NumericUpDownExt19"
         Me.NumericUpDownExt19.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt19.TabIndex = 31
-        Me.NumericUpDownExt19.Value = New Decimal(New Integer() {15, 0, 0, 0})
+        Me.NumericUpDownExt19.Value = New Decimal(New Integer() {50, 0, 0, 0})
         Me.NumericUpDownExt19.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt20
@@ -932,7 +818,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt20.Name = "NumericUpDownExt20"
         Me.NumericUpDownExt20.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt20.TabIndex = 24
-        Me.NumericUpDownExt20.Value = New Decimal(New Integer() {2, 0, 0, -2147483648})
+        Me.NumericUpDownExt20.Value = New Decimal(New Integer() {25, 0, 0, 0})
         Me.NumericUpDownExt20.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt21
@@ -951,7 +837,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt21.Name = "NumericUpDownExt21"
         Me.NumericUpDownExt21.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt21.TabIndex = 20
-        Me.NumericUpDownExt21.Value = New Decimal(New Integer() {75, 0, 0, 0})
+        Me.NumericUpDownExt21.Value = New Decimal(New Integer() {90, 0, 0, 0})
         Me.NumericUpDownExt21.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt22
@@ -989,7 +875,7 @@ Partial Class frmConfTemperature
         Me.NumericUpDownExt23.Name = "NumericUpDownExt23"
         Me.NumericUpDownExt23.Size = New System.Drawing.Size(50, 22)
         Me.NumericUpDownExt23.TabIndex = 22
-        Me.NumericUpDownExt23.Value = New Decimal(New Integer() {75, 0, 0, 0})
+        Me.NumericUpDownExt23.Value = New Decimal(New Integer() {90, 0, 0, 0})
         Me.NumericUpDownExt23.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'NumericUpDownExt24
@@ -1161,14 +1047,44 @@ Partial Class frmConfTemperature
         Me.Label54.TabIndex = 5
         Me.Label54.Text = "Campi di realtà dei setpoint"
         '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(160, 481)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(83, 13)
+        Me.Label28.TabIndex = 34
+        Me.Label28.Text = "(non applicabile)"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(466, 455)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(83, 13)
+        Me.Label29.TabIndex = 34
+        Me.Label29.Text = "(non applicabile)"
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(466, 481)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(83, 13)
+        Me.Label30.TabIndex = 34
+        Me.Label30.Text = "(non applicabile)"
+        '
         'frmConfTemperature
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(601, 633)
+        Me.Controls.Add(Me.Label30)
         Me.Controls.Add(Me.Label28)
         Me.Controls.Add(Me.Label29)
-        Me.Controls.Add(Me.Label30)
         Me.Controls.Add(Me.Label31)
         Me.Controls.Add(Me.Label32)
         Me.Controls.Add(Me.Label33)
@@ -1178,10 +1094,6 @@ Partial Class frmConfTemperature
         Me.Controls.Add(Me.Label37)
         Me.Controls.Add(Me.Label38)
         Me.Controls.Add(Me.Label39)
-        Me.Controls.Add(Me.NumericUpDownExt13)
-        Me.Controls.Add(Me.NumericUpDownExt14)
-        Me.Controls.Add(Me.NumericUpDownExt15)
-        Me.Controls.Add(Me.NumericUpDownExt16)
         Me.Controls.Add(Me.NumericUpDownExt17)
         Me.Controls.Add(Me.NumericUpDownExt18)
         Me.Controls.Add(Me.NumericUpDownExt19)
@@ -1266,10 +1178,6 @@ Partial Class frmConfTemperature
         CType(Me.NumericUpDownExt10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownExt11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownExt12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDownExt13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDownExt14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDownExt15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDownExt16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownExt17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownExt18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownExt19, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1325,9 +1233,6 @@ Partial Class frmConfTemperature
     Friend WithEvents Label25 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label29 As Label
-    Friend WithEvents Label30 As Label
     Friend WithEvents Label31 As Label
     Friend WithEvents Label32 As Label
     Friend WithEvents Label33 As Label
@@ -1337,10 +1242,6 @@ Partial Class frmConfTemperature
     Friend WithEvents Label37 As Label
     Friend WithEvents Label38 As Label
     Friend WithEvents Label39 As Label
-    Friend WithEvents NumericUpDownExt13 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
-    Friend WithEvents NumericUpDownExt14 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
-    Friend WithEvents NumericUpDownExt15 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
-    Friend WithEvents NumericUpDownExt16 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
     Friend WithEvents NumericUpDownExt17 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
     Friend WithEvents NumericUpDownExt18 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
     Friend WithEvents NumericUpDownExt19 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
@@ -1364,4 +1265,7 @@ Partial Class frmConfTemperature
     Friend WithEvents Label52 As Label
     Friend WithEvents Label53 As Label
     Friend WithEvents Label54 As Label
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Label30 As Label
 End Class

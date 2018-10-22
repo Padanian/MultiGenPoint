@@ -11,7 +11,8 @@
     <AssemblyName>MultiGenPoint</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,9 +48,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Syncfusion.Core.WinForms, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.DataSource.WinForms, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Base, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Windows, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.GridCommon.WinForms, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.SfInput.WinForms, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SfListView.WinForms, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Base, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Windows, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Tools.Base, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -79,6 +83,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmConfDispPot.Designer.vb">
+      <DependentUpon>frmConfDispPot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfDispPot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfScheduler.Designer.vb">
+      <DependentUpon>frmConfScheduler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfScheduler.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmConfTemperature.Designer.vb">
       <DependentUpon>frmConfTemperature.vb</DependentUpon>
     </Compile>
@@ -95,6 +111,12 @@
       <DependentUpon>frmConfImpianti.vb</DependentUpon>
     </Compile>
     <Compile Include="frmConfImpianti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimeshift.Designer.vb">
+      <DependentUpon>frmTimeshift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeshift.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -114,6 +136,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmConfDispPot.resx">
+      <DependentUpon>frmConfDispPot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfScheduler.resx">
+      <DependentUpon>frmConfScheduler.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConfTemperature.resx">
       <DependentUpon>frmConfTemperature.vb</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConfImpianti.resx">
       <DependentUpon>frmConfImpianti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeshift.resx">
+      <DependentUpon>frmTimeshift.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
