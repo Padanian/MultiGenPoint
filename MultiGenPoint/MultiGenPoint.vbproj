@@ -11,7 +11,7 @@
     <AssemblyName>MultiGenPoint</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -47,6 +47,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MultiGenPointCalendarStrip">
+      <HintPath>..\..\MultiGenPointCalendarStrip\MultiGenPointCalendarStrip\bin\Release\MultiGenPointCalendarStrip.dll</HintPath>
+    </Reference>
     <Reference Include="MultiGenTemperatureIconLeft">
       <HintPath>..\..\MultiGenTemperatureIconLeft\MultiGenTemperatureIconLeft\MultiGenTemperatureIconLeft\bin\Release\MultiGenTemperatureIconLeft.dll</HintPath>
     </Reference>

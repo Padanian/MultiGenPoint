@@ -41,6 +41,9 @@ Partial Class frmConfScheduler
         Me.SfButton7 = New Syncfusion.WinForms.Controls.SfButton()
         Me.SfButton8 = New Syncfusion.WinForms.Controls.SfButton()
         Me.SfButton9 = New Syncfusion.WinForms.Controls.SfButton()
+        Me.MultiGenPointCalendarStrip1 = New MultiGenPointCalendarStrip.MultiGenPointCalendarStrip()
+        Me.MultiGenPointCalendarStrip2 = New MultiGenPointCalendarStrip.MultiGenPointCalendarStrip()
+        Me.MultiGenPointCalendarStrip3 = New MultiGenPointCalendarStrip.MultiGenPointCalendarStrip()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,7 +56,7 @@ Partial Class frmConfScheduler
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
         Me.TableLayoutPanel1.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(297, 253)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(509, 253)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -93,7 +96,7 @@ Partial Class frmConfScheduler
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(15, 113)
+        Me.Label4.Location = New System.Drawing.Point(15, 121)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(132, 13)
         Me.Label4.TabIndex = 2
@@ -103,7 +106,7 @@ Partial Class frmConfScheduler
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(15, 139)
+        Me.Label5.Location = New System.Drawing.Point(15, 155)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(143, 13)
         Me.Label5.TabIndex = 2
@@ -113,7 +116,7 @@ Partial Class frmConfScheduler
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(15, 165)
+        Me.Label7.Location = New System.Drawing.Point(15, 181)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(114, 13)
         Me.Label7.TabIndex = 2
@@ -123,7 +126,7 @@ Partial Class frmConfScheduler
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(15, 191)
+        Me.Label8.Location = New System.Drawing.Point(15, 207)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(88, 13)
         Me.Label8.TabIndex = 2
@@ -133,7 +136,7 @@ Partial Class frmConfScheduler
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(160, 165)
+        Me.Label20.Location = New System.Drawing.Point(160, 181)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(83, 13)
         Me.Label20.TabIndex = 4
@@ -143,7 +146,7 @@ Partial Class frmConfScheduler
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(160, 191)
+        Me.Label1.Location = New System.Drawing.Point(160, 207)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(83, 13)
         Me.Label1.TabIndex = 4
@@ -186,7 +189,7 @@ Partial Class frmConfScheduler
         '
         Me.SfButton4.AccessibleName = "Button"
         Me.SfButton4.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SfButton4.Location = New System.Drawing.Point(163, 106)
+        Me.SfButton4.Location = New System.Drawing.Point(163, 114)
         Me.SfButton4.Name = "SfButton4"
         Me.SfButton4.Size = New System.Drawing.Size(55, 20)
         Me.SfButton4.TabIndex = 5
@@ -196,7 +199,7 @@ Partial Class frmConfScheduler
         '
         Me.SfButton5.AccessibleName = "Button"
         Me.SfButton5.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SfButton5.Location = New System.Drawing.Point(224, 106)
+        Me.SfButton5.Location = New System.Drawing.Point(224, 114)
         Me.SfButton5.Name = "SfButton5"
         Me.SfButton5.Size = New System.Drawing.Size(55, 20)
         Me.SfButton5.TabIndex = 5
@@ -206,7 +209,7 @@ Partial Class frmConfScheduler
         '
         Me.SfButton6.AccessibleName = "Button"
         Me.SfButton6.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SfButton6.Location = New System.Drawing.Point(285, 106)
+        Me.SfButton6.Location = New System.Drawing.Point(285, 114)
         Me.SfButton6.Name = "SfButton6"
         Me.SfButton6.Size = New System.Drawing.Size(55, 20)
         Me.SfButton6.TabIndex = 5
@@ -216,7 +219,7 @@ Partial Class frmConfScheduler
         '
         Me.SfButton7.AccessibleName = "Button"
         Me.SfButton7.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SfButton7.Location = New System.Drawing.Point(163, 132)
+        Me.SfButton7.Location = New System.Drawing.Point(163, 148)
         Me.SfButton7.Name = "SfButton7"
         Me.SfButton7.Size = New System.Drawing.Size(55, 20)
         Me.SfButton7.TabIndex = 5
@@ -226,7 +229,7 @@ Partial Class frmConfScheduler
         '
         Me.SfButton8.AccessibleName = "Button"
         Me.SfButton8.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SfButton8.Location = New System.Drawing.Point(224, 132)
+        Me.SfButton8.Location = New System.Drawing.Point(224, 148)
         Me.SfButton8.Name = "SfButton8"
         Me.SfButton8.Size = New System.Drawing.Size(55, 20)
         Me.SfButton8.TabIndex = 5
@@ -236,17 +239,47 @@ Partial Class frmConfScheduler
         '
         Me.SfButton9.AccessibleName = "Button"
         Me.SfButton9.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SfButton9.Location = New System.Drawing.Point(285, 132)
+        Me.SfButton9.Location = New System.Drawing.Point(285, 148)
         Me.SfButton9.Name = "SfButton9"
         Me.SfButton9.Size = New System.Drawing.Size(55, 20)
         Me.SfButton9.TabIndex = 5
         Me.SfButton9.Text = "Fascia 3"
         '
+        'MultiGenPointCalendarStrip1
+        '
+        Me.MultiGenPointCalendarStrip1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MultiGenPointCalendarStrip1.Location = New System.Drawing.Point(347, 70)
+        Me.MultiGenPointCalendarStrip1.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.MultiGenPointCalendarStrip1.Name = "MultiGenPointCalendarStrip1"
+        Me.MultiGenPointCalendarStrip1.Size = New System.Drawing.Size(288, 30)
+        Me.MultiGenPointCalendarStrip1.TabIndex = 6
+        '
+        'MultiGenPointCalendarStrip2
+        '
+        Me.MultiGenPointCalendarStrip2.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MultiGenPointCalendarStrip2.Location = New System.Drawing.Point(347, 104)
+        Me.MultiGenPointCalendarStrip2.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.MultiGenPointCalendarStrip2.Name = "MultiGenPointCalendarStrip2"
+        Me.MultiGenPointCalendarStrip2.Size = New System.Drawing.Size(288, 30)
+        Me.MultiGenPointCalendarStrip2.TabIndex = 6
+        '
+        'MultiGenPointCalendarStrip3
+        '
+        Me.MultiGenPointCalendarStrip3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MultiGenPointCalendarStrip3.Location = New System.Drawing.Point(347, 138)
+        Me.MultiGenPointCalendarStrip3.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.MultiGenPointCalendarStrip3.Name = "MultiGenPointCalendarStrip3"
+        Me.MultiGenPointCalendarStrip3.Size = New System.Drawing.Size(288, 30)
+        Me.MultiGenPointCalendarStrip3.TabIndex = 6
+        '
         'frmConfScheduler
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(455, 294)
+        Me.ClientSize = New System.Drawing.Size(667, 294)
+        Me.Controls.Add(Me.MultiGenPointCalendarStrip3)
+        Me.Controls.Add(Me.MultiGenPointCalendarStrip2)
+        Me.Controls.Add(Me.MultiGenPointCalendarStrip1)
         Me.Controls.Add(Me.SfButton9)
         Me.Controls.Add(Me.SfButton6)
         Me.Controls.Add(Me.SfButton3)
@@ -297,4 +330,7 @@ Partial Class frmConfScheduler
     Friend WithEvents SfButton7 As Syncfusion.WinForms.Controls.SfButton
     Friend WithEvents SfButton8 As Syncfusion.WinForms.Controls.SfButton
     Friend WithEvents SfButton9 As Syncfusion.WinForms.Controls.SfButton
+    Friend WithEvents MultiGenPointCalendarStrip1 As MultiGenPointCalendarStrip.MultiGenPointCalendarStrip
+    Friend WithEvents MultiGenPointCalendarStrip2 As MultiGenPointCalendarStrip.MultiGenPointCalendarStrip
+    Friend WithEvents MultiGenPointCalendarStrip3 As MultiGenPointCalendarStrip.MultiGenPointCalendarStrip
 End Class

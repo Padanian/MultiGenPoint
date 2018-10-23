@@ -25,7 +25,7 @@ Partial Class frmConfDispPot
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
-        Me.NumericUpDownExt1 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
+        Me.nupCFFSpriority = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -46,9 +46,9 @@ Partial Class frmConfDispPot
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.NumericUpDownExt2 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
-        Me.NumericUpDownExt3 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
-        Me.NumericUpDownExt4 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
+        Me.nupCFERpriority = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
+        Me.nupASHPpriority = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
+        Me.nupGSHPpriority = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -56,11 +56,11 @@ Partial Class frmConfDispPot
         Me.NumericUpDownExt6 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
         Me.NumericUpDownExt8 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.NumericUpDownExt1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nupCFFSpriority, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDownExt2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDownExt3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDownExt4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nupCFERpriority, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nupASHPpriority, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nupGSHPpriority, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownExt8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,22 +101,22 @@ Partial Class frmConfDispPot
         Me.Cancel_Button.TabIndex = 1
         Me.Cancel_Button.Text = "Annulla"
         '
-        'NumericUpDownExt1
+        'nupCFFSpriority
         '
-        Me.NumericUpDownExt1.BeforeTouchSize = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDownExt1.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDownExt1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.NumericUpDownExt1.Location = New System.Drawing.Point(163, 80)
-        Me.NumericUpDownExt1.Maximum = New Decimal(New Integer() {6, 0, 0, 0})
-        Me.NumericUpDownExt1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDownExt1.Name = "NumericUpDownExt1"
-        Me.NumericUpDownExt1.Size = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt1.TabIndex = 3
-        Me.NumericUpDownExt1.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.nupCFFSpriority.BeforeTouchSize = New System.Drawing.Size(50, 22)
+        Me.nupCFFSpriority.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.nupCFFSpriority.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.nupCFFSpriority.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nupCFFSpriority.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.nupCFFSpriority.Location = New System.Drawing.Point(163, 80)
+        Me.nupCFFSpriority.Maximum = New Decimal(New Integer() {4, 0, 0, 0})
+        Me.nupCFFSpriority.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.nupCFFSpriority.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nupCFFSpriority.Name = "nupCFFSpriority"
+        Me.nupCFFSpriority.Size = New System.Drawing.Size(50, 22)
+        Me.nupCFFSpriority.TabIndex = 3
+        Me.nupCFFSpriority.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nupCFFSpriority.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'Label2
         '
@@ -325,56 +325,56 @@ Partial Class frmConfDispPot
         Me.Label25.TabIndex = 4
         Me.Label25.Text = "%"
         '
-        'NumericUpDownExt2
+        'nupCFERpriority
         '
-        Me.NumericUpDownExt2.BeforeTouchSize = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDownExt2.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDownExt2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.NumericUpDownExt2.Location = New System.Drawing.Point(163, 106)
-        Me.NumericUpDownExt2.Maximum = New Decimal(New Integer() {6, 0, 0, 0})
-        Me.NumericUpDownExt2.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDownExt2.Name = "NumericUpDownExt2"
-        Me.NumericUpDownExt2.Size = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt2.TabIndex = 3
-        Me.NumericUpDownExt2.Value = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDownExt2.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.nupCFERpriority.BeforeTouchSize = New System.Drawing.Size(50, 22)
+        Me.nupCFERpriority.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.nupCFERpriority.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.nupCFERpriority.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nupCFERpriority.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.nupCFERpriority.Location = New System.Drawing.Point(163, 106)
+        Me.nupCFERpriority.Maximum = New Decimal(New Integer() {4, 0, 0, 0})
+        Me.nupCFERpriority.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.nupCFERpriority.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nupCFERpriority.Name = "nupCFERpriority"
+        Me.nupCFERpriority.Size = New System.Drawing.Size(50, 22)
+        Me.nupCFERpriority.TabIndex = 3
+        Me.nupCFERpriority.Value = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.nupCFERpriority.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
-        'NumericUpDownExt3
+        'nupASHPpriority
         '
-        Me.NumericUpDownExt3.BeforeTouchSize = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDownExt3.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDownExt3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.NumericUpDownExt3.Location = New System.Drawing.Point(163, 132)
-        Me.NumericUpDownExt3.Maximum = New Decimal(New Integer() {6, 0, 0, 0})
-        Me.NumericUpDownExt3.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt3.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDownExt3.Name = "NumericUpDownExt3"
-        Me.NumericUpDownExt3.Size = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt3.TabIndex = 3
-        Me.NumericUpDownExt3.Value = New Decimal(New Integer() {3, 0, 0, 0})
-        Me.NumericUpDownExt3.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.nupASHPpriority.BeforeTouchSize = New System.Drawing.Size(50, 22)
+        Me.nupASHPpriority.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.nupASHPpriority.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.nupASHPpriority.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nupASHPpriority.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.nupASHPpriority.Location = New System.Drawing.Point(163, 132)
+        Me.nupASHPpriority.Maximum = New Decimal(New Integer() {4, 0, 0, 0})
+        Me.nupASHPpriority.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.nupASHPpriority.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nupASHPpriority.Name = "nupASHPpriority"
+        Me.nupASHPpriority.Size = New System.Drawing.Size(50, 22)
+        Me.nupASHPpriority.TabIndex = 3
+        Me.nupASHPpriority.Value = New Decimal(New Integer() {3, 0, 0, 0})
+        Me.nupASHPpriority.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
-        'NumericUpDownExt4
+        'nupGSHPpriority
         '
-        Me.NumericUpDownExt4.BeforeTouchSize = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDownExt4.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDownExt4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.NumericUpDownExt4.Location = New System.Drawing.Point(163, 158)
-        Me.NumericUpDownExt4.Maximum = New Decimal(New Integer() {6, 0, 0, 0})
-        Me.NumericUpDownExt4.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.NumericUpDownExt4.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDownExt4.Name = "NumericUpDownExt4"
-        Me.NumericUpDownExt4.Size = New System.Drawing.Size(50, 22)
-        Me.NumericUpDownExt4.TabIndex = 3
-        Me.NumericUpDownExt4.Value = New Decimal(New Integer() {4, 0, 0, 0})
-        Me.NumericUpDownExt4.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.nupGSHPpriority.BeforeTouchSize = New System.Drawing.Size(50, 22)
+        Me.nupGSHPpriority.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.nupGSHPpriority.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.nupGSHPpriority.Font = New System.Drawing.Font("Segoe UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nupGSHPpriority.ForeColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.nupGSHPpriority.Location = New System.Drawing.Point(163, 158)
+        Me.nupGSHPpriority.Maximum = New Decimal(New Integer() {4, 0, 0, 0})
+        Me.nupGSHPpriority.MetroColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.nupGSHPpriority.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nupGSHPpriority.Name = "nupGSHPpriority"
+        Me.nupGSHPpriority.Size = New System.Drawing.Size(50, 22)
+        Me.nupGSHPpriority.TabIndex = 3
+        Me.nupGSHPpriority.Value = New Decimal(New Integer() {4, 0, 0, 0})
+        Me.nupGSHPpriority.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
         '
         'Label1
         '
@@ -471,10 +471,10 @@ Partial Class frmConfDispPot
         Me.Controls.Add(Me.NumericUpDownExt6)
         Me.Controls.Add(Me.NumericUpDownExt5)
         Me.Controls.Add(Me.NumericUpDownExt7)
-        Me.Controls.Add(Me.NumericUpDownExt4)
-        Me.Controls.Add(Me.NumericUpDownExt3)
-        Me.Controls.Add(Me.NumericUpDownExt2)
-        Me.Controls.Add(Me.NumericUpDownExt1)
+        Me.Controls.Add(Me.nupGSHPpriority)
+        Me.Controls.Add(Me.nupASHPpriority)
+        Me.Controls.Add(Me.nupCFERpriority)
+        Me.Controls.Add(Me.nupCFFSpriority)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label2)
@@ -499,11 +499,11 @@ Partial Class frmConfDispPot
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Configurazione priorità e potenze relative"
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.NumericUpDownExt1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nupCFFSpriority, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownExt7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDownExt2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDownExt3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDownExt4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nupCFERpriority, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nupASHPpriority, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nupGSHPpriority, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownExt5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownExt6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownExt8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -515,7 +515,7 @@ Partial Class frmConfDispPot
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents OK_Button As Button
     Friend WithEvents Cancel_Button As Button
-    Friend WithEvents NumericUpDownExt1 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
+    Friend WithEvents nupCFFSpriority As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
@@ -536,9 +536,9 @@ Partial Class frmConfDispPot
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
-    Friend WithEvents NumericUpDownExt2 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
-    Friend WithEvents NumericUpDownExt3 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
-    Friend WithEvents NumericUpDownExt4 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
+    Friend WithEvents nupCFERpriority As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
+    Friend WithEvents nupASHPpriority As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
+    Friend WithEvents nupGSHPpriority As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
     Friend WithEvents Label1 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
