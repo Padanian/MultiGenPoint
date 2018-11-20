@@ -59,24 +59,24 @@ Public Class frmMain
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         frmConfImpianti.visualizzaGeneratoriAttivi()
-        mgtiPSGS.changeName("Tpsgs")
-        mgtiPSGS.changeTemp(0)
-        mgtiPSGS.changeLED(Color.Gray)
-        mgtiCTPI.changeName("Tctpi")
-        mgtiCTPI.changeTemp(0)
-        mgtiCTPI.changeLED(Color.Gray)
-        mgtiGSHP.changeName("Tgshp")
-        mgtiGSHP.changeTemp(0)
-        mgtiGSHP.changeLED(Color.Gray)
-        mgtiASHP.changeName("Tashp")
-        mgtiASHP.changeTemp(0)
-        mgtiASHP.changeLED(Color.Gray)
-        mgtiCFER.changeName("Tcfer")
-        mgtiCFER.changeTemp(0)
-        mgtiCFER.changeLED(Color.Gray)
-        mgtiCFFS.changeName("Tcffs")
-        mgtiCFFS.changeTemp(0)
-        mgtiCFFS.changeLED(Color.Gray)
+        mgtiPSGS.Tname = "Tpsgs"
+        mgtiPSGS.TempValue = (0)
+        mgtiPSGS.LEDcolor = Color.Gray
+        mgtiCTPI.Tname = "Tctpi"
+        mgtiCTPI.TempValue = (0)
+        mgtiCTPI.LEDcolor = Color.Gray
+        mgtiGSHP.Tname = "Tgshp"
+        mgtiGSHP.TempValue = (0)
+        mgtiGSHP.LEDcolor = Color.Gray
+        mgtiASHP.Tname = "Tashp"
+        mgtiASHP.TempValue = (0)
+        mgtiASHP.LEDcolor = Color.Gray
+        mgtiCFER.Tname = "Tcfer"
+        mgtiCFER.TempValue = (0)
+        mgtiCFER.LEDcolor = Color.Gray
+        mgtiCFFS.Tname = "Tcffs"
+        mgtiCFFS.TempValue = (0)
+        mgtiCFFS.LEDcolor = Color.Gray
 
     End Sub
 

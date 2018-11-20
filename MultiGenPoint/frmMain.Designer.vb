@@ -30,12 +30,12 @@ Partial Class frmMain
         Me.ConfigurazioneTemperatureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfigurazonePrioritàEPotenzeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mgtiCTPI = New MultiGenTemperatureIconLeft.MultiGenTemperatureIconLeft()
-        Me.mgtiCFFS = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
-        Me.mgtiCFER = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
-        Me.mgtiASHP = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
-        Me.mgtiGSHP = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
-        Me.mgtiPSGS = New MultiGenTemperatureIconRight.MultiGenTemperatureIconRight()
+        Me.mgtiCTPI = New MultiLibrary.MultiGenTemperatureIconLeft()
+        Me.mgtiCFFS = New MultiLibrary.MultiGenTemperatureIconRight()
+        Me.mgtiCFER = New MultiLibrary.MultiGenTemperatureIconRight()
+        Me.mgtiASHP = New MultiLibrary.MultiGenTemperatureIconRight()
+        Me.mgtiGSHP = New MultiLibrary.MultiGenTemperatureIconRight()
+        Me.mgtiPSGS = New MultiLibrary.MultiGenTemperatureIconRight()
         Me.pbCFFSburner = New System.Windows.Forms.PictureBox()
         Me.pbCFERburner = New System.Windows.Forms.PictureBox()
         Me.pbPSECsolar = New System.Windows.Forms.PictureBox()
@@ -121,7 +121,7 @@ Partial Class frmMain
         Me.mgtiCTPI.Size = New System.Drawing.Size(75, 55)
         Me.mgtiCTPI.TabIndex = 22
         Me.mgtiCTPI.TempValue = 0R
-        Me.mgtiCTPI.Tname = Nothing
+        Me.mgtiCTPI.Tname = ""
         '
         'mgtiCFFS
         '
@@ -133,7 +133,7 @@ Partial Class frmMain
         Me.mgtiCFFS.Size = New System.Drawing.Size(75, 55)
         Me.mgtiCFFS.TabIndex = 25
         Me.mgtiCFFS.TempValue = 0R
-        Me.mgtiCFFS.Tname = Nothing
+        Me.mgtiCFFS.Tname = ""
         '
         'mgtiCFER
         '
@@ -145,7 +145,7 @@ Partial Class frmMain
         Me.mgtiCFER.Size = New System.Drawing.Size(75, 55)
         Me.mgtiCFER.TabIndex = 25
         Me.mgtiCFER.TempValue = 0R
-        Me.mgtiCFER.Tname = Nothing
+        Me.mgtiCFER.Tname = ""
         '
         'mgtiASHP
         '
@@ -157,7 +157,7 @@ Partial Class frmMain
         Me.mgtiASHP.Size = New System.Drawing.Size(75, 55)
         Me.mgtiASHP.TabIndex = 24
         Me.mgtiASHP.TempValue = 0R
-        Me.mgtiASHP.Tname = Nothing
+        Me.mgtiASHP.Tname = ""
         '
         'mgtiGSHP
         '
@@ -169,7 +169,7 @@ Partial Class frmMain
         Me.mgtiGSHP.Size = New System.Drawing.Size(75, 55)
         Me.mgtiGSHP.TabIndex = 23
         Me.mgtiGSHP.TempValue = 0R
-        Me.mgtiGSHP.Tname = Nothing
+        Me.mgtiGSHP.Tname = ""
         '
         'mgtiPSGS
         '
@@ -335,10 +335,10 @@ Partial Class frmMain
     Friend WithEvents ConfigurazioneTemperatureToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConfigurazonePrioritàEPotenzeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConfigurazioneSchedulazioneDiConvenienzaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents mgtiPSGS As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
-    Friend WithEvents mgtiCTPI As MultiGenTemperatureIconLeft.MultiGenTemperatureIconLeft
-    Friend WithEvents mgtiGSHP As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
-    Friend WithEvents mgtiASHP As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
-    Friend WithEvents mgtiCFER As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
-    Friend WithEvents mgtiCFFS As MultiGenTemperatureIconRight.MultiGenTemperatureIconRight
+    Friend WithEvents mgtiPSGS As MultiLibrary.MultiGenTemperatureIconRight
+    Friend WithEvents mgtiCTPI As MultiLibrary.MultiGenTemperatureIconLeft
+    Friend WithEvents mgtiGSHP As MultiLibrary.MultiGenTemperatureIconRight
+    Friend WithEvents mgtiASHP As MultiLibrary.MultiGenTemperatureIconRight
+    Friend WithEvents mgtiCFER As MultiLibrary.MultiGenTemperatureIconRight
+    Friend WithEvents mgtiCFFS As MultiLibrary.MultiGenTemperatureIconRight
 End Class

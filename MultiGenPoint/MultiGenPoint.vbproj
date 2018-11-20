@@ -47,14 +47,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MultiGenPointCalendarStrip">
-      <HintPath>..\..\MultiGenPointCalendarStrip\MultiGenPointCalendarStrip\bin\Release\MultiGenPointCalendarStrip.dll</HintPath>
-    </Reference>
-    <Reference Include="MultiGenTemperatureIconLeft">
-      <HintPath>..\..\MultiGenTemperatureIconLeft\MultiGenTemperatureIconLeft\MultiGenTemperatureIconLeft\bin\Release\MultiGenTemperatureIconLeft.dll</HintPath>
-    </Reference>
-    <Reference Include="MultiGenTemperatureIconRight">
-      <HintPath>..\..\MultiGenTemperatureIconRight\MultiGenTemperatureIconRight\MultiGenTemperatureIconRight\bin\Release\MultiGenTemperatureIconRight.dll</HintPath>
+    <Reference Include="MultiLibrary">
+      <HintPath>..\..\MultiLibrary\MultiLibrary\bin\Release\MultiLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Core.WinForms, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.DataSource.WinForms, Version=16.2460.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />

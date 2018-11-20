@@ -41,9 +41,9 @@ Partial Class frmConfScheduler
         Me.SfButton7 = New Syncfusion.WinForms.Controls.SfButton()
         Me.SfButton8 = New Syncfusion.WinForms.Controls.SfButton()
         Me.SfButton9 = New Syncfusion.WinForms.Controls.SfButton()
-        Me.MultiGenPointCalendarStrip1 = New MultiGenPointCalendarStrip.MultiGenPointCalendarStrip()
-        Me.MultiGenPointCalendarStrip2 = New MultiGenPointCalendarStrip.MultiGenPointCalendarStrip()
-        Me.MultiGenPointCalendarStrip3 = New MultiGenPointCalendarStrip.MultiGenPointCalendarStrip()
+        Me.MultiGenPointCalendarStrip1 = New MultiLibrary.MultiGenPointCalendarStrip()
+        Me.MultiGenPointCalendarStrip2 = New MultiLibrary.MultiGenPointCalendarStrip()
+        Me.MultiGenPointCalendarStrip3 = New MultiLibrary.MultiGenPointCalendarStrip()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -330,7 +330,7 @@ Partial Class frmConfScheduler
     Friend WithEvents SfButton7 As Syncfusion.WinForms.Controls.SfButton
     Friend WithEvents SfButton8 As Syncfusion.WinForms.Controls.SfButton
     Friend WithEvents SfButton9 As Syncfusion.WinForms.Controls.SfButton
-    Friend WithEvents MultiGenPointCalendarStrip1 As MultiGenPointCalendarStrip.MultiGenPointCalendarStrip
-    Friend WithEvents MultiGenPointCalendarStrip2 As MultiGenPointCalendarStrip.MultiGenPointCalendarStrip
-    Friend WithEvents MultiGenPointCalendarStrip3 As MultiGenPointCalendarStrip.MultiGenPointCalendarStrip
+    Friend WithEvents MultiGenPointCalendarStrip1 As MultiLibrary.MultiGenPointCalendarStrip
+    Friend WithEvents MultiGenPointCalendarStrip2 As MultiLibrary.MultiGenPointCalendarStrip
+    Friend WithEvents MultiGenPointCalendarStrip3 As MultiLibrary.MultiGenPointCalendarStrip
 End Class

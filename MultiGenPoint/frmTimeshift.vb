@@ -184,7 +184,7 @@ Public Class frmTimeshift
             Dim F3On = CInt(frmMain.GenCFFS_SchedulerStructure.F3OnHour) * 12 + CInt(frmMain.GenCFFS_SchedulerStructure.F3OnMinute) / 5
             Dim F3Off = CInt(frmMain.GenCFFS_SchedulerStructure.F3OffHour) * 12 + CInt(frmMain.GenCFFS_SchedulerStructure.F3OffMinute) / 5
 
-            frmConfScheduler.MultiGenPointCalendarStrip1.Settings(F1On, F1Off, F2On, F2Off, F3On, F3Off)
+            frmConfScheduler.MultiGenPointCalendarStrip1.Settings = {F1On, F1Off, F2On, F2Off, F3On, F3Off}
         End If
         If frmConfScheduler.callingButton = 4 Or
                  frmConfScheduler.callingButton = 5 Or
@@ -196,7 +196,7 @@ Public Class frmTimeshift
             Dim F3On = CInt(frmMain.GenCFER_SchedulerStructure.F3OnHour) * 12 + CInt(frmMain.GenCFER_SchedulerStructure.F3OnMinute) / 5
             Dim F3Off = CInt(frmMain.GenCFER_SchedulerStructure.F3OffHour) * 12 + CInt(frmMain.GenCFER_SchedulerStructure.F3OffMinute) / 5
 
-            frmConfScheduler.MultiGenPointCalendarStrip2.Settings(F1On, F1Off, F2On, F2Off, F3On, F3Off)
+            frmConfScheduler.MultiGenPointCalendarStrip2.Settings = {F1On, F1Off, F2On, F2Off, F3On, F3Off}
         End If
         If frmConfScheduler.callingButton = 7 Or
                  frmConfScheduler.callingButton = 8 Or
@@ -208,7 +208,7 @@ Public Class frmTimeshift
             Dim F3On = CInt(frmMain.GenHP_SchedulerStructure.F3OnHour) * 12 + CInt(frmMain.GenHP_SchedulerStructure.F3OnMinute) / 5
             Dim F3Off = CInt(frmMain.GenHP_SchedulerStructure.F3OffHour) * 12 + CInt(frmMain.GenHP_SchedulerStructure.F3OffMinute) / 5
 
-            frmConfScheduler.MultiGenPointCalendarStrip3.Settings(F1On, F1Off, F2On, F2Off, F3On, F3Off)
+            frmConfScheduler.MultiGenPointCalendarStrip3.Settings = {F1On, F1Off, F2On, F2Off, F3On, F3Off}
         End If
 
 
